@@ -1,0 +1,20 @@
+
+
+/* Styles for the Task 2 */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 16px;
+  }
+  
+  .gallery li {
+    width: 360px;
+    height: 300px;
+    overflow: hidden;
+  }
+  
+  .gallery li img {
+    height: 100%;
+  }
