@@ -1,0 +1,29 @@
+.widget {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+p {
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.04em;
+    color: #2e2f42;
+}
+
+.change-color {
+    border: none;
+    border-radius: 8px;
+    padding: 8px 16px;
+    width: 148px;
+    height: 40px;
+    background: #4e75ff;
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.04em;
+}
