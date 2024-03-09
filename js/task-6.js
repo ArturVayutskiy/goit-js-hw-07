@@ -24,19 +24,22 @@ function createBoxes() {
   if (amount < 1 || amount > 100 || !Number.isInteger(+amount)) {
     alert('Please enter a number between 1 and 100.');
     return;
+    
   }
+  // Очищення поля вводу данних
+  input.value = '';
   
   const boxes = [];
-  let defaulSizeBox = 30;
+  let defaultSizeBox = 30;
   
 //   Якщо число від 1 до 100 то створюємо блоки
   for (let i = 0; i < amount; i++) {
     const box = document.createElement('div');
-    box.style.width = `${defaulSizeBox}px`;
-    box.style.height = `${defaulSizeBox}px`;
+    box.style.width = `${defaultSizeBox}px`;
+    box.style.height = `${defaultSizeBox}px`;
     box.style.backgroundColor = getRandomHexColor();
     boxes.push(box);
-    defaulSizeBox += 10;
+    defaultSizeBox += 10;
   }
   
   // Додаємо блоки в контейнер
